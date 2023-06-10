@@ -1,3 +1,10 @@
+//
+//  RecPresetClient.swift
+//  EpgTimerAPIKit
+//
+//  Created by petitstrawberry on 2023/06/10.
+//
+
 import XMLCoder
 
 public class RecPresetClient {
@@ -15,9 +22,8 @@ public class RecPresetClient {
         case .success:
             let entry: Entry<RecPresetInfoItem> = try XMLDecoder().decode(Entry<RecPresetInfoItem>.self, from: response.data!)
 
-            return entry.items.map {
-                $0.recPresetInfo
-            }
+            return entry.items.recPresetInfo
+
         case let .failure(error):
             print(error)
             return []

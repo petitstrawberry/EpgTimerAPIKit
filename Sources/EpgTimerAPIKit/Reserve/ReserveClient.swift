@@ -1,3 +1,10 @@
+//
+//  ReserveClient.swift
+//  EpgTimerAPIKit
+//
+//  Created by petitstrawberry on 2023/06/10.
+//
+
 import XMLCoder
 
 public class ReserveClient {
@@ -17,9 +24,8 @@ public class ReserveClient {
         case .success:
             let entry: Entry<ReserveInfoItem> = try XMLDecoder().decode(Entry<ReserveInfoItem>.self, from: response.data!)
 
-            return entry.items.map {
-                $0.reserveInfo
-            }
+            return entry.items.reserveInfo
+
         case let .failure(error):
             print(error)
             return []

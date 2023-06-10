@@ -1,5 +1,12 @@
+//
+//  ReserveInfo.swift
+//  EpgTimerAPIKit
+//
+//  Created by petitstrawberry on 2023/06/10.
+//
+
 public struct ReserveInfoItem: EntryItem {
-    public let reserveInfo: ReserveInfo
+    public let reserveInfo: [ReserveInfo]
 
     enum CodingKeys: String, CodingKey {
         case reserveInfo = "reserveinfo"

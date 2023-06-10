@@ -1,3 +1,10 @@
+//
+//  EventClient.swift
+//  EpgTimerAPIKit
+//
+//  Created by petitstrawberry on 2023/06/10.
+//
+
 import XMLCoder
 
 public class EventClient {
@@ -15,9 +22,8 @@ public class EventClient {
         case .success:
             let entry: Entry<EventInfoItem> = try XMLDecoder().decode(Entry<EventInfoItem>.self, from: response.data!)
 
-            return entry.items.map {
-                $0.eventInfo
-            }
+            return entry.items.eventInfo
+
         case let .failure(error):
             print(error)
             return []

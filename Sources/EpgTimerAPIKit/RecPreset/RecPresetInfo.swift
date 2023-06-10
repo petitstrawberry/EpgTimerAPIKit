@@ -1,5 +1,12 @@
+//
+//  RecPresetInfo.swift
+//  EpgTimerAPIKit
+//
+//  Created by petitstrawberry on 2023/06/10.
+//
+
 public struct RecPresetInfoItem: EntryItem {
-    public let recPresetInfo: RecPresetInfo
+    public let recPresetInfo: [RecPresetInfo]
 
     enum CodingKeys: String, CodingKey {
         case recPresetInfo = "recpresetinfo"

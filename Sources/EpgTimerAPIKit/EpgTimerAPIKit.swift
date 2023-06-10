@@ -1,6 +1,9 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
-
+//
+//  EpgTimerAPIKit.swift
+//  EpgTimerAPIKit
+//
+//  Created by petitstrawberry on 2023/06/10.
+//
 import Alamofire
 import Foundation
 import XMLCoder

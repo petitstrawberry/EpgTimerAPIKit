@@ -1,5 +1,12 @@
+//
+//  RecSetting.swift
+//  EpgTimerAPIKit
+//
+//  Created by petitstrawberry on 2023/06/10.
+//
+
 struct RecSettingItem: EntryItem {
-    let recSetting: RecSetting
+    let recSetting: [RecSetting]
 
     enum CodingKeys: String, CodingKey {
         case recSetting = "recsetting"

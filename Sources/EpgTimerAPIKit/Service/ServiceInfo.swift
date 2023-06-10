@@ -1,5 +1,12 @@
+//
+//  ServiceInfo.swift
+//  EpgTimerAPIKit
+//
+//  Created by petitstrawberry on 2023/06/10.
+//
+
 public struct ServiceInfoItem: EntryItem {
-    public let serviceInfo: ServiceInfo
+    public let serviceInfo: [ServiceInfo]
 
     enum CodingKeys: String, CodingKey {
         case serviceInfo = "serviceinfo"
