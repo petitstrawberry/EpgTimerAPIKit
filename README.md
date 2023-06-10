@@ -1,6 +1,10 @@
 # EpgTimerAPIKit
 EpgTimer API Client for Swift
 
+**注意**
+
+まだこのライブラリはバージョン1.0どころか0.1.0に到達しておらず、基本的な設計すら確定していません。 今後の更新で大幅に変更される可能性があります。
+
 ## Installation
 
 ```swift
