@@ -1,8 +1,8 @@
-import XCTest
 @testable import EpgTimerAPIKit
+import XCTest
 
 final class EpgTimerAPIKitTests: XCTestCase {
-    func testExample() throws {
+    func testExample() async throws {
         // XCTest Documenation
         // https://developer.apple.com/documentation/xctest
 
