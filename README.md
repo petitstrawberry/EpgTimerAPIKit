@@ -5,7 +5,7 @@ EpgTimer API Client for Swift
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/petitstrawberry/EpgTimerAPIKitd", from: "0.0.1")
+    .package(url: "https://github.com/petitstrawberry/EpgTimerAPIKit", from: "0.0.1")
   ],
 ```
 
