@@ -20,6 +20,7 @@ public class EpgTimer {
     public let service: ServiceClient
     public let event: EventClient
     public let recPreset: RecPresetClient
+    public let rec: RecClient
 
     // MARK: - Initializer
 
@@ -29,6 +30,7 @@ public class EpgTimer {
         service = ServiceClient(client: client)
         event = EventClient(client: client)
         recPreset = RecPresetClient(client: client)
+        rec = RecClient(client: client)
     }
 
     public init(baseURL: String, session: Session) {
@@ -37,5 +39,6 @@ public class EpgTimer {
         service = ServiceClient(client: client)
         event = EventClient(client: client)
         recPreset = RecPresetClient(client: client)
+        rec = RecClient(client: client)
     }
 }
