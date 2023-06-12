@@ -5,8 +5,8 @@
 //  Created by petitstrawberry on 2023/06/12.
 //
 
-public struct RecInfoItem: EntryItem {
-    public let recInfo: [RecInfo]
+struct RecInfoItem: EntryItem {
+    let recInfo: [RecInfo]
 
     enum CodingKeys: String, CodingKey {
         case recInfo = "recinfo"

@@ -21,6 +21,7 @@ public class EpgTimer {
     public let event: EventClient
     public let recPreset: RecPresetClient
     public let rec: RecClient
+    public let autoAdd: AutoAddClient
 
     // MARK: - Initializer
 
@@ -31,6 +32,7 @@ public class EpgTimer {
         event = EventClient(client: client)
         recPreset = RecPresetClient(client: client)
         rec = RecClient(client: client)
+        autoAdd = AutoAddClient(client: client)
     }
 
     public init(baseURL: String, session: Session) {
@@ -40,5 +42,6 @@ public class EpgTimer {
         event = EventClient(client: client)
         recPreset = RecPresetClient(client: client)
         rec = RecClient(client: client)
+        autoAdd = AutoAddClient(client: client)
     }
 }

@@ -5,8 +5,8 @@
 //  Created by petitstrawberry on 2023/06/10.
 //
 
-public struct EventInfoItem: EntryItem {
-    public let eventInfo: [EventInfo]
+struct EventInfoItem: EntryItem {
+    let eventInfo: [EventInfo]
 
     enum CodingKeys: String, CodingKey {
         case eventInfo = "eventinfo"
