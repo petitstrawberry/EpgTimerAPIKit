@@ -52,38 +52,38 @@ public struct SearchSetting: Codable {
         case chkDurationMin, chkDurationMax
         case contentList, dateList, serviceList
     }
-}
 
-public struct Content: Codable {
-    public let contentNibble: Int
-    public let userNibble: Int
+    public struct Content: Codable {
+        public let contentNibble: Int
+        public let userNibble: Int
 
-    enum CodingKeys: String, CodingKey {
-        case contentNibble = "content_nibble"
-        case userNibble = "user_nibble"
+        enum CodingKeys: String, CodingKey {
+            case contentNibble = "content_nibble"
+            case userNibble = "user_nibble"
+        }
     }
-}
 
-public struct Date: Codable {
-    public let startDayOfWeek: Int
-    public let startHour: Int
-    public let startMin: Int
-    public let endDayOfWeek: Int
-    public let endHour: Int
-    public let endMin: Int
+    public struct Date: Codable {
+        public let startDayOfWeek: Int
+        public let startHour: Int
+        public let startMin: Int
+        public let endDayOfWeek: Int
+        public let endHour: Int
+        public let endMin: Int
 
-    enum CodingKeys: String, CodingKey {
-        case startDayOfWeek, startHour, startMin
-        case endDayOfWeek, endHour, endMin
+        enum CodingKeys: String, CodingKey {
+            case startDayOfWeek, startHour, startMin
+            case endDayOfWeek, endHour, endMin
+        }
     }
-}
 
-public struct Service: Codable {
-    public let onid: Int
-    public let tsid: Int
-    public let sid: Int
+    public struct Service: Codable {
+        public let onid: Int
+        public let tsid: Int
+        public let sid: Int
 
-    enum CodingKeys: String, CodingKey {
-        case onid, tsid, sid
+        enum CodingKeys: String, CodingKey {
+            case onid, tsid, sid
+        }
     }
 }
