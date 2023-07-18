@@ -35,7 +35,7 @@ public struct EventInfo: Codable {
     public let duration: Int
     public let eventName: String
     public let eventText: String
-    public let contentInfo: ContentInfo
+    public let contentInfo: [ContentInfo]
     public let freeCAFlag: Int
 
     enum CodingKeys: String, CodingKey {
