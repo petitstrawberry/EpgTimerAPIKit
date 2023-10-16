@@ -33,8 +33,8 @@ public struct EventInfo: Codable {
     public let startTime: String
     public let startDayOfWeek: Int
     public let duration: Int
-    public let eventName: String
-    public let eventText: String
+    public let eventName: String?
+    public let eventText: String?
     public let contentInfo: [ContentInfo]
     public let freeCAFlag: Int
 
