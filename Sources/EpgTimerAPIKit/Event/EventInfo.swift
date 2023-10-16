@@ -5,8 +5,8 @@
 //  Created by petitstrawberry on 2023/06/10.
 //
 
-public struct EventInfoItem: EntryItem {
-    public let eventInfo: [EventInfo]
+struct EventInfoItem: EntryItem {
+    let eventInfo: [EventInfo]
 
     enum CodingKeys: String, CodingKey {
         case eventInfo = "eventinfo"
@@ -33,9 +33,9 @@ public struct EventInfo: Codable {
     public let startTime: String
     public let startDayOfWeek: Int
     public let duration: Int
-    public let eventName: String
-    public let eventText: String
-    public let contentInfo: ContentInfo
+    public let eventName: String?
+    public let eventText: String?
+    public let contentInfo: [ContentInfo]
     public let freeCAFlag: Int
 
     enum CodingKeys: String, CodingKey {

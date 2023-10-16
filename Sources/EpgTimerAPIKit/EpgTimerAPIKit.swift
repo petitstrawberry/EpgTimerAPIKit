@@ -9,7 +9,7 @@ import Foundation
 import XMLCoder
 
 public class EpgTimer {
-    public static let version = "0.0.1"
+    public static let version = "0.0.2"
 
     struct Client {
         let baseURL: String
@@ -20,6 +20,8 @@ public class EpgTimer {
     public let service: ServiceClient
     public let event: EventClient
     public let recPreset: RecPresetClient
+    public let rec: RecClient
+    public let autoAdd: AutoAddClient
 
     // MARK: - Initializer
 
@@ -29,6 +31,8 @@ public class EpgTimer {
         service = ServiceClient(client: client)
         event = EventClient(client: client)
         recPreset = RecPresetClient(client: client)
+        rec = RecClient(client: client)
+        autoAdd = AutoAddClient(client: client)
     }
 
     public init(baseURL: String, session: Session) {
@@ -37,5 +41,7 @@ public class EpgTimer {
         service = ServiceClient(client: client)
         event = EventClient(client: client)
         recPreset = RecPresetClient(client: client)
+        rec = RecClient(client: client)
+        autoAdd = AutoAddClient(client: client)
     }
 }
