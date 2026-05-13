@@ -20,7 +20,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/CoreOffice/XMLCoder.git", from: "0.18.1"),
+        .package(url: "https://github.com/CoreOffice/XMLCoder.git", from: "0.18.2"),
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.12.0")),
     ],
     targets: [
