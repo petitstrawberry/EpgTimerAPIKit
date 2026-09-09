@@ -21,7 +21,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/CoreOffice/XMLCoder.git", from: "0.18.2"),
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.12.0")),
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.12.1")),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
